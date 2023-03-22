@@ -1,0 +1,16 @@
+[package]
+name = "typed-num"
+version = "0.2.0"
+edition = "2021"
+description = "Typed number in Rust with serde support"
+license = "WTFPL"
+homepage = "https://github.com/ldm0/typed-num"
+documentation = "https://docs.rs/typed-num"
+repository = "https://github.com/ldm0/typed-num"
+
+[dependencies]
+serde = "1"
+
+[dev-dependencies]
+serde_derive = "1.0"
+toml = "0.7"
