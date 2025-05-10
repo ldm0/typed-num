@@ -1,6 +1,6 @@
 # typed-num
 
-Typed number in Rust with `serde` support.
+Typed number in Rust with `serde` and `bincode` support.
 
 ```rust
 use typed_num::Num;

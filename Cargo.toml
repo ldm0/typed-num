@@ -2,15 +2,21 @@
 name = "typed-num"
 version = "0.2.0"
 edition = "2021"
-description = "Typed number in Rust with serde support"
+description = "Typed number in Rust with serde and bincode support"
 license = "WTFPL"
 homepage = "https://github.com/ldm0/typed-num"
 documentation = "https://docs.rs/typed-num"
 repository = "https://github.com/ldm0/typed-num"
 
+[features]
+default = ["serde", "bincode"]
+serde = ["dep:serde"]
+bincode = ["dep:bincode"]
+
 [dependencies]
-serde = "1"
+serde = { version = "1", optional = true }
+bincode = { version = "2", optional = true }
 
 [dev-dependencies]
 serde_derive = "1.0"
-toml = "0.7"
+toml = "0.8"
